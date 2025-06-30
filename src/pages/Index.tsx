@@ -53,16 +53,16 @@ const Index = () => {
               size="lg"
               className="bg-museum-red hover:bg-museum-darkRed text-white"
             >
-              <Icon name="Eye" size={20} className="mr-2" />
-              Виртуальный тур
+              <Icon name="Calendar" size={20} className="mr-2" />
+              Записаться на экскурсию
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-museum-red text-museum-red hover:bg-museum-cream"
             >
-              <Icon name="Calendar" size={20} className="mr-2" />
-              Записаться на экскурсию
+              <Icon name="Palette" size={20} className="mr-2" />
+              Мастер-классы для детей
             </Button>
           </div>
         </div>
@@ -109,13 +109,13 @@ const Index = () => {
                 Мастер-классы и события
               </h2>
               <p className="text-gray-600 mb-8">
-                Погрузитесь в мир традиционных ремёсел на наших мастер-классах.
-                Изучайте древние техники под руководством опытных мастеров.
+                Специальные мастер-классы для детей от 6 до 18 лет! Изучайте
+                древние техники под руководством опытных мастеров.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Icon name="Users" size={20} className="text-museum-red" />
-                  <span>Группы до 12 человек</span>
+                  <span>Для детей от 6 до 18 лет</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Icon name="Clock" size={20} className="text-museum-red" />
@@ -143,7 +143,7 @@ const Index = () => {
                 <div className="flex items-center space-x-2">
                   <Icon name="MapPin" size={16} />
                   <span className="text-sm">
-                    г. Архангельск, ул. Музейная, 15
+                    г. Санкт-Петербург, ул. Музейная, 15
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">

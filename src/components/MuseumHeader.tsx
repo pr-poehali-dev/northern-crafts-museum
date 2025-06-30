@@ -14,17 +14,17 @@ const MuseumHeader = () => {
     <header className="bg-museum-cream border-b-2 border-museum-gold">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-museum-red rounded-full flex items-center justify-center">
-              <Icon name="Castle" size={24} className="text-white" />
-            </div>
+          <div className="flex items-center space-x-4">
+            <img
+              src="https://cdn.poehali.dev/files/fe246f51-53dc-4e9c-90a2-a0ec18214a39.jpg"
+              alt="Логотип РЕМЕСЛА"
+              className="h-16 w-auto"
+            />
             <div>
-              <h1 className="text-2xl font-serif font-bold text-museum-darkRed">
-                Ремёсла северо-запада России
-              </h1>
-              <p className="text-sm text-museum-red opacity-80">
+              <p className="text-sm text-museum-red opacity-80 font-medium">
                 Музей народного искусства
               </p>
+              <p className="text-xs text-gray-500">Северо-Запад России</p>
             </div>
           </div>
 

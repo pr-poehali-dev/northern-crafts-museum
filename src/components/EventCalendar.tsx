@@ -10,6 +10,7 @@ interface Event {
   time: string;
   type: "master-class" | "exhibition" | "lecture";
   availableSpots?: number;
+  ageRange?: string;
 }
 
 const EventCalendar = () => {
@@ -21,6 +22,7 @@ const EventCalendar = () => {
       time: "14:00",
       type: "master-class",
       availableSpots: 8,
+      ageRange: "6-18 лет",
     },
     {
       id: 2,
@@ -31,11 +33,12 @@ const EventCalendar = () => {
     },
     {
       id: 3,
-      title: "Лекция о традициях резьбы по дереву",
+      title: "Мастер-класс по резьбе по дереву",
       date: "25 июля",
       time: "16:00",
-      type: "lecture",
-      availableSpots: 25,
+      type: "master-class",
+      availableSpots: 12,
+      ageRange: "6-18 лет",
     },
   ];
 
@@ -94,11 +97,21 @@ const EventCalendar = () => {
                 <p className="text-sm text-gray-600">
                   {event.date} в {event.time}
                 </p>
-                {event.availableSpots && (
-                  <Badge variant="outline" className="mt-1 text-xs">
-                    Осталось {event.availableSpots} мест
-                  </Badge>
-                )}
+                <div className="flex gap-2 mt-1">
+                  {event.availableSpots && (
+                    <Badge variant="outline" className="text-xs">
+                      Осталось {event.availableSpots} мест
+                    </Badge>
+                  )}
+                  {event.ageRange && (
+                    <Badge
+                      variant="outline"
+                      className="text-xs bg-museum-gold text-white"
+                    >
+                      {event.ageRange}
+                    </Badge>
+                  )}
+                </div>
               </div>
             </div>
             <Button
