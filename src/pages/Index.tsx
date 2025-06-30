@@ -40,6 +40,13 @@ const Index = () => {
 
       {/* Главный баннер */}
       <section className="relative py-20 bg-gradient-to-r from-museum-cream to-museum-beige">
+        <div className="absolute top-8 right-8">
+          <img
+            src="https://cdn.poehali.dev/files/2cd46d1a-99a4-41bc-82e5-3c54d6396b76.png"
+            alt="Солнышко"
+            className="w-16 h-16 opacity-70"
+          />
+        </div>
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-serif font-bold text-museum-darkRed mb-6">
             Добро пожаловать в мир русских ремёсел
@@ -71,7 +78,12 @@ const Index = () => {
       {/* Избранные экспонаты */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 relative">
+            <img
+              src="https://cdn.poehali.dev/files/2cd46d1a-99a4-41bc-82e5-3c54d6396b76.png"
+              alt="Солнышко"
+              className="absolute -top-4 -left-4 w-12 h-12 opacity-50"
+            />
             <h2 className="text-3xl font-serif font-bold text-museum-darkRed mb-4">
               Избранные экспонаты
             </h2>
@@ -104,7 +116,12 @@ const Index = () => {
       <section className="py-16 bg-museum-cream">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
-            <div>
+            <div className="relative">
+              <img
+                src="https://cdn.poehali.dev/files/2cd46d1a-99a4-41bc-82e5-3c54d6396b76.png"
+                alt="Солнышко"
+                className="absolute -top-2 -right-2 w-10 h-10 opacity-60"
+              />
               <h2 className="text-3xl font-serif font-bold text-museum-darkRed mb-6">
                 Мастер-классы и события
               </h2>
@@ -143,16 +160,18 @@ const Index = () => {
                 <div className="flex items-center space-x-2">
                   <Icon name="MapPin" size={16} />
                   <span className="text-sm">
-                    г. Санкт-Петербург, ул. Музейная, 15
+                    Школьная 110, к.2, Санкт-Петербург
                   </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Phone" size={16} />
-                  <span className="text-sm">+7 (8182) 123-456</span>
+                  <span className="text-sm">
+                    +79045578564 - заведующая музеем Васильева М. П.
+                  </span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Icon name="Mail" size={16} />
-                  <span className="text-sm">info@remesla-museum.ru</span>
+                  <span className="text-sm">kitplus-museum@yandex.ru</span>
                 </div>
               </div>
             </div>
@@ -178,21 +197,13 @@ const Index = () => {
                   variant="ghost"
                   className="text-white hover:text-museum-gold"
                 >
-                  <Icon name="Facebook" size={20} />
-                </Button>
-                <Button
-                  size="icon"
-                  variant="ghost"
-                  className="text-white hover:text-museum-gold"
-                >
-                  <Icon name="Instagram" size={20} />
-                </Button>
-                <Button
-                  size="icon"
-                  variant="ghost"
-                  className="text-white hover:text-museum-gold"
-                >
-                  <Icon name="Youtube" size={20} />
+                  <svg
+                    className="w-5 h-5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14C20.67 22 22 20.67 22 15.07V8.93C22 3.33 20.67 2 15.07 2zM12 16.5c-2.48 0-4.5-2.02-4.5-4.5s2.02-4.5 4.5-4.5 4.5 2.02 4.5 4.5-2.02 4.5-4.5 4.5z" />
+                  </svg>
                 </Button>
               </div>
             </div>
